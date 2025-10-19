@@ -14,7 +14,7 @@
 1. Клонуй репозиторій:
 
 ```bash
-git clone <https://github.com/DmytroK-goit/todo-app.git>
+git clone https://github.com/DmytroK-goit/todo-app.git
 cd todo-app
 ```
 
@@ -29,3 +29,15 @@ npm install
 4.  Відкрий у браузері:
 
     http://localhost:5173
+
+## Технології
+
+1.  React + Vite
+2.  Redux Toolkit
+3.  Axios
+4.  Tailwind CSS
+
+## Автор
+
+Dmytro Kovbasyuk
+Portfolio - https://portfolio-sooty-five-98.vercel.app/
