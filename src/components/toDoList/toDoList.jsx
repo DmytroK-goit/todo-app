@@ -41,9 +41,9 @@ export default function TodosList() {
 
   return (
     <div className="todos-container p-6 max-w-3xl mx-auto text-gray-100">
-      <div className="flex justify-between items-center gap-4">
+      <div className="flex flex-col justify-between items-center gap-4">
         <h2 className="text-3xl font-bold text-emerald-400">Todo List</h2>
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 w-full justify-between">
           <input
             placeholder="Search by title..."
             value={search}
@@ -51,7 +51,7 @@ export default function TodosList() {
               setSearch(e.target.value);
               setPage(1);
             }}
-            className="px-3 py-2 rounded-xl border border-gray-700 bg-gray-100 text-white focus:outline-none"
+            className="px-3 py-2 w-1/2 rounded-xl border border-gray-700 bg-gray-100 text-white focus:outline-none"
           />
           <select
             value={limit}
@@ -59,7 +59,7 @@ export default function TodosList() {
               setLimit(Number(e.target.value));
               setPage(1);
             }}
-            className="bg-gray-800 text-white border border-gray-700 px-2 py-2 rounded-xl"
+            className="w-1/6 bg-gray-800 text-white border border-gray-700 px-2 py-2 rounded-xl"
           >
             <option value={5}>5</option>
             <option value={10}>10</option>
